@@ -161,7 +161,7 @@ button2.addEventListener('click', function(){
     document.getElementById('text').placeholder = '0_<';
     pp = '';
     for ( let i = game.min; i <= game.max; i++){
-        if (game.hint.length !== 0 && game.hint.includes(i)) pp += `<span>${i}</span> `;
+        if (game.hint.length !== 0 && game.hint.includes(i)) pp += `<u>${i}</u> `;
         else pp += `${i} `;
     }
     document.querySelector('p').innerHTML = pp;
