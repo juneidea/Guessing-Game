@@ -159,14 +159,13 @@ button2.addEventListener('click', function(){
     if (game.hint.length === 0) game.hint = game.provideHint();
     document.getElementById('text').value = '';
     document.getElementById('text').placeholder = '0_<';
-    pp = '';
+    pp = '<font size="3">';
     for ( let i = game.min; i <= game.max; i++){
         if (game.hint.length !== 0 && game.hint.includes(i)) pp += `<span>${i}</span> `;
         else pp += `${i} `;
     }
+    pp += '</font>';
     document.querySelector('p').innerHTML = pp;
-    document.querySelector('p').style.fontSize = "small";
-    document.querySelector('p').style.fontSize = "medium";
 });
 button3 = document.getElementById('reset');
 button3.addEventListener('click', function(){
