@@ -161,11 +161,12 @@ button2.addEventListener('click', function(){
     document.getElementById('text').placeholder = '0_<';
     pp = '';
     for ( let i = game.min; i <= game.max; i++){
-        if (game.hint.length !== 0 && game.hint.includes(i)) pp += `<u>${i}</u> `;
+        if (game.hint.length !== 0 && game.hint.includes(i)) pp += `<span>${i}</span> `;
         else pp += `${i} `;
     }
     document.querySelector('p').innerHTML = pp;
-    document.querySelector('p').style.fontSize = "100%";
+    document.querySelector('p').style.fontSize = "small";
+    document.querySelector('p').style.fontSize = "medium";
 });
 button3 = document.getElementById('reset');
 button3.addEventListener('click', function(){
