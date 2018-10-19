@@ -165,8 +165,7 @@ button2.addEventListener('click', function(){
         else pp += `${i} `;
     }
     document.querySelector('p').innerHTML = pp;
-    document.querySelector('p').style.fontSize = "smaller";
-
+    document.querySelector('p').style.fontSize = "100%";
 });
 button3 = document.getElementById('reset');
 button3.addEventListener('click', function(){
