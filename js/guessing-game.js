@@ -168,17 +168,18 @@ button2.addEventListener('click', function(){
 });
 button3 = document.getElementById('reset');
 button3.addEventListener('click', function(){
-    game = newGame();
-    pp = '';
-    for ( let i = 1; i <= 100; i++){
-        pp += `${i} `;
-    }
-    document.querySelector('p').textContent = pp;
-    document.getElementById('text').value = '';
-    document.getElementById('text').placeholder = '#5';
-    document.querySelector('H2').textContent = 'Guess a number between 1-100';
-    document.getElementById('back').style = `height: 100%;
-    background: #2980B9;
-    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
-    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);`;
+    // game = newGame();
+    // pp = '';
+    // for ( let i = 1; i <= 100; i++){
+    //     pp += `${i} `;
+    // }
+    // document.querySelector('p').textContent = pp;
+    // document.getElementById('text').value = '';
+    // document.getElementById('text').placeholder = '#5';
+    // document.querySelector('H2').textContent = 'Guess a number between 1-100';
+    // document.getElementById('back').style = `height: 100%;
+    // background: #2980B9;
+    // background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+    // background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);`;
+    location.reload();
 });
